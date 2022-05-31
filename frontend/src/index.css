@@ -1,0 +1,26 @@
+@font-face{
+   font-family: "Sans";
+   src: url("./assets/sanss___.ttf");
+}
+@font-face{
+   font-family:"Lato";
+   src:url("./assets/Lato-Medium.ttf");
+}
+
+:root {
+  --font-base:"Lato", "Sans", sans-serif;
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}

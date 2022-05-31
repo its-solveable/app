@@ -1,0 +1,120 @@
+.app {
+   background-color: var(--primary-color);
+   font-family: var(--font-base);
+}
+
+.app__container {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   width: 100%;
+}
+
+.app__wrapper {
+   display: flex;
+   position: relative;
+}
+
+.app__navigators {
+   display: flex;
+   flex: .3;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+
+
+   position: absolute;
+   right: .3rem;
+   top: 50vh;
+
+
+   a {
+      text-decoration: none;
+      color: var(--black-color);
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      padding: .2rem;
+      margin: .3rem;
+      border: 1px solid var(--lightGray-color);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+         background: red;
+      }
+
+   }
+
+   a.active {
+      background: red;
+   }
+   @media screen and (max-width: 900px) {
+      display: none;
+   }
+}
+
+.app__social-icons {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   position: absolute;
+   left: .3rem;
+   top: 50vh;
+
+   a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: .2rem;
+      margin: .3rem;
+      width: 30px;
+      height: 30px;
+
+      border-radius: 50%;
+      border: 1px solid var(--lightGray-color);
+
+      &:hover {
+         background: rgba(255,255,255,.7);
+      }
+
+      img {
+         width: 20px;
+      }
+
+   }
+   @media screen and (min-width: 100px) {
+      top: 70vh;
+   }
+}
+
+.app__copyright{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding: .4rem;
+   
+   
+   position: absolute;
+   top: 85vh;
+   right: 4rem;
+   border: rgba(255, 255, 255, .2);
+   background: rgba(255, 255, 255, .5);
+   -webkit-webkit-backdrop-filter: blur(5px);
+   -moz-webkit-backdrop-filter: blur(5px);
+   -ms-webkit-backdrop-filter: blur(5px);
+   -o-webkit-backdrop-filter: blur(5px);
+   webkit-backdrop-filter: blur(5px);
+   
+   border-radius: 10px;
+   
+   @media screen and (min-width: 900px){
+      top: 89vh;
+   }
+}
